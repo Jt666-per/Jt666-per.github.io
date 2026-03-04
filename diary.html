@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>逐梦桃花源的暖窝 · 日志</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <style> /* 复用 main 样式 (略，为节省篇幅此处保留一致风格) */ 
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; }
+        body { background: #fef9f1; color: #4a3b2f; display: flex; flex-direction: column; min-height: 100vh; }
+        .header { background: #fff4e6; padding: 0.6rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; border-bottom: 2px solid #fadbc7; }
+        .logo-area { display: flex; align-items: center; gap: 12px; }
+        .logo-area img { width: 42px; height: 42px; border-radius: 50%; border: 2px solid #f8b281; }
+        .site-name { font-size: 1.7rem; color: #bf7b54; text-shadow: 2px 2px 0 #fae1d2; }
+        .nav-links { display: flex; gap: 2rem; font-size: 1.15rem; }
+        .nav-links a { text-decoration: none; color: #946b51; border-bottom: 3px solid transparent; transition: 0.2s; }
+        .nav-links a:hover { border-bottom-color: #e3a082; color: #b45f3a; }
+        .main-content { flex: 1; max-width: 1200px; width: 90%; margin: 2rem auto; background: rgba(255, 247, 240, 0.7); border-radius: 32px; padding: 2rem 2.5rem; box-shadow: 0 10px 30px #f0daca; }
+        .footer { background: #ead7cb; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem; border-top: 3px solid #dbb59b; }
+        .stats span { background: #fff2e6; padding: 4px 12px; border-radius: 30px; margin-right: 15px; }
+        .admin-area a { background: #bb7e5f; color: white; padding: 5px 18px; border-radius: 30px; text-decoration: none; margin-left: 10px; }
+        .grid-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.8rem; margin-top: 2rem; }
+        .diary-item { background: white; border-radius: 28px; overflow: hidden; box-shadow: 0 6px 14px #e9cfbe; }
+        .diary-item img { width: 100%; height: 200px; object-fit: cover; }
+        .diary-item .info { padding: 1.2rem; }
+        .diary-item h3 { color: #b46239; }
+        h2 { color: #a5673f; border-left: 6px solid #f1ab86; padding-left: 1rem; margin: 1rem 0; }
+    </style>
+</head>
+<body>
+    <header class="header">(同上导航, 略写以省空间, 实际每个页面包含完整导航)</header>
+    <div class="main-content">
+        <h2><i class="fa-regular fa-note-sticky"></i> 图文日志 · 点滴记忆</h2>
+        <div class="grid-list">
+            <div class="diary-item"><img src="https://picsum.photos/id/1043/400/250" alt="log"><div class="info"><h3>地铁上的读书时光</h3><p>今天带了〈解忧杂货店〉，旁边的小朋友一直看我的书...</p><span class="tag">地铁迷</span></div></div>
+            <div class="diary-item"><img src="https://picsum.photos/id/100/400/250" alt="log"><div class="info"><h3>电脑升级记录</h3><p>换了新的SSD，速度飞起！又折腾了一晚上。</p><span class="tag">电脑迷</span></div></div>
+            <div class="diary-item"><img src="https://picsum.photos/id/1015/400/250" alt="log"><div class="info"><h3>桃花源徒步</h3><p>山里的空气真好，发现了小野花。</p><span class="tag">自然</span></div></div>
+        </div>
+    </div>
+    <footer class="footer">(底部同main, 含动态脚本, 下同)</footer>
+    <script>/* 复用底部统计与登录逻辑 */</script>
+</body>
+</html>

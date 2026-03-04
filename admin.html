@@ -1,0 +1,15 @@
+<div class="main-content">
+    <h2><i class="fa-solid fa-gear"></i> 管理后台</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 2rem;">
+        <div class="card"><h3>📝 发布日志</h3><textarea placeholder="写点新鲜事……" rows="4" style="width:100%; border-radius:18px; padding:10px;"></textarea><button style="margin-top:10px;">发布</button></div>
+        <div class="card"><h3>📂 整理日志</h3><ul><li>地铁上的书香 <button>编辑</button></li><li>电脑升级记录 <button>编辑</button></li></ul></div>
+        <div class="card"><h3>✏️ 修改介绍</h3><input value="地铁迷 电脑迷" style="width:100%;"><button style="margin-top:10px;">保存介绍</button></div>
+    </div>
+    <p style="text-align:center; margin-top:2rem;"><a href="main.html">返回首页</a></p>
+</div>
+<script>
+    if (sessionStorage.getItem('diaryAdmin') !== 'true') {
+        alert('请先登录');
+        window.location.href = 'login.html';
+    }
+</script>
